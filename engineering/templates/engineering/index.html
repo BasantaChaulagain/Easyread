@@ -1,0 +1,5 @@
+<form action="{% url 'engineering:index' %}" method="post">
+{% csrf_token %}
+	{{ form.as_p }}
+	<button id = "submit">Submit</button>
+</form>
